@@ -1,7 +1,6 @@
 <?php
 
+use App\Http\Controllers\frontController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
+Route::get('/', [frontController::class, 'index']);
